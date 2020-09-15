@@ -1,0 +1,60 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A cool thing made by ganesh kavhar" />
+
+    <title>Welcome to Notes App</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Notes App
+      </h1>
+    </header>
+
+    <main>
+      <p class="bold">Oh hi,</p>
+
+      <p>Tell me your hopes and notes:</p>
+
+      <form>
+        <input
+          name="dream"
+          aria-label="a new dream"
+          type="text"
+          maxlength="100"
+          placeholder="Dreams!"
+        />
+        <button type="submit" id="submit-dream">Submit Notes</button>
+      </form>
+
+      <section class="dreams">
+        <ul id="dreams"></ul>
+        <button id="clear-dreams">
+          Clear Notes
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      Made by
+      <a href="https://ganeshmkavhar.000webhostapp.com/">ganesh kavhar</a>
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
